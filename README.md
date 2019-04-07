@@ -1,30 +1,30 @@
-# {PORTFOLIO}
+## Password Locker project
+This project was generated using python version 3.6. This is a terminal project that allows users to store their passwords and generate new ones.
 
-
-#### By **{Rodney Somoire}**
-## Description
-{This portfolio contains websites that I have built during my first week of learning how to code. }
-
-
-## Setup/Installation Requirements
-*Clone this repository onto your desktop run it on the terminal and use the command: git clone URL.git,to clone it.
-{This website does not require any extra programs or any servers to run. }
+## SETUP INSTRUCTIONS:
+1.Fork the repository to your work space.
+2.Once forked it can be run on the terminal.
 
 
 
-## Known Bugs
-
-{The website does not contain any known bugs. }
-
-
-## Technologies Used
-{The website was made using python.}
-
-
-## Support and contact details
-{Feel free to contact me on rsomoire@yahoo.com if you encounter any problems.}
+## BEHAVIOUR DRIVEN DEVELOPMENT
+| GENERAL BEHAVIOUR | INPUT | OUTPUT|
+|:------------------|:--------|:-----------|
+|User creates account| They input their username and password|User is able to store passwords and usernames|
+|User wants to store pre-existing password| They enter pre-existing passwords into the password locker|Passwords are saved|
+|User wants to generate a password for a new account| User inputs desired password|Password for new account is set|
+|User wants to generate a password for a new account| Password locker generates the password|Password for new account is set|
+|User wants to delete account credentials|---|Account credentials are deleted|
+|User wants to view account credentials|---|Account credentials are dispalyed|
 
 
-### License
-*{This website is licensed under the terms of GPL licensing.}*
-Copyright (c) {2019} **{Somoire Rodney}**
+## Development server
+Run this program on your terminal using the python3.6 command followed by the file name e.g python3.6 password-locker
+
+
+
+## Further help
+To get more help on the Python CLI use ng help or go check out the Python CLI README and Python documentation.
+
+## CONTACT INFORMATION
+By me some tea through my email address : rsomoire@yahoo.com
