@@ -57,17 +57,17 @@ def display_credential():
 
 
 def main():
-        print("Hello Welcome to your password locker. What is your name?")
+        print("Welcome to your password locker.Please input your name?")
         user_name = input()
 
         print(f"Hello {user_name}. what would you like to do?")
         print('\n')
         while True:
-                print("Use these short codes : cc - create a new account, dc - display accounts, fc -find an account, ex -exit the password locker ")
+                print("run either of this codes according to your preference: ss - Sign-up a new account, dc - display accounts generated, fd -find an account, quit -close the password locker ")
 
                 short_code = input().lower()
 
-                if short_code == 'cc':
+                if short_code == 'ss':
                         print("New account")
                         print("-"*10)
 
@@ -120,11 +120,11 @@ def main():
                                 print("You dont seem to have any accounts saved yet")
                                 print('\n')
 
-                elif short_code == 'fc':
+                elif short_code == 'fd':
                         print("Enter the account you want to search for")
                         search_account = input()
-                        if check_existing_accounts(search_account):
-                                search_account = find_account(search_account)
+                        if(search_account):
+                                search_account =(search_account)
                                 print(f"{search_account.user_name} {search_account.account_name}")
                                 print('-' * 20)
 
@@ -133,10 +133,10 @@ def main():
                         else:
                                 print("That account does not exist")
 
-                elif short_code == 'ex':
-                            print("Bye .......")
+                elif short_code == 'quit':
+                            print("Thank you for visiting password locker;-)")
                             break
         else:
-                print("I really didn't get that. Please use the short codes")
+                print("Kindly use the specified codes to be able to run password locker")
 if __name__ == '__main__':
         main()
