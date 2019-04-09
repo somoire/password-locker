@@ -105,7 +105,7 @@ def main():
 
                 elif short_code == 'dc':
                         if display_user():
-                                print("Here is a list of all your accounts")
+                                print("There you go")
                                 print('\n')
 
                                 for user in display_user():
@@ -117,11 +117,11 @@ def main():
                                         print('\n')
                         else:
                                 print('\n')
-                                print("You dont seem to have any accounts saved yet")
+                                print("Currently there are no existent accounts.")
                                 print('\n')
 
                 elif short_code == 'fd':
-                        print("Enter the account you want to search for")
+                        print("Key in the account username you want to search for")
                         search_account = input()
                         if(search_account):
                                 search_account =(search_account)
@@ -131,7 +131,7 @@ def main():
                                 print(f"account name.......{search_account.account.name}")
                                 print(f"user name.......{search_account.user_name}")
                         else:
-                                print("That account does not exist")
+                                print("Kindly verify that the account really exists from the user.")
 
                 elif short_code == 'quit':
                             print("Thank you for visiting password locker;-)")
